@@ -1,0 +1,8 @@
+prefix=/home/husarion/husarion_workspace/install
+
+Name: rosbot_webui
+Description: Description of rosbot_webui
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/husarion/husarion_workspace/install/lib 
+Requires: 

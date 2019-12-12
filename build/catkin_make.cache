@@ -1,0 +1,2 @@
+husarion_ros:rosbot_ekf:rosbot_webui:tutorial_pkg
+-DCATKIN_DEVEL_PREFIX=/home/husarion/husarion_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/husarion/husarion_workspace/install -G Unix Makefiles
