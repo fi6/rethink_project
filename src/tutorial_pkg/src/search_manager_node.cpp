@@ -288,6 +288,7 @@ void objects_found_callback(const std_msgs::Float32MultiArrayConstPtr &msg)
         ROS_INFO("Object detected");
         //object_found = true;
         path_cancel_publisher.publish(-1);  //stop moving
+        scanner_runstate_publisher.publish(true);
         //WRITE QR CODE SCANNER HERE
         publish_waypoints(waypoints);
     }
@@ -435,6 +436,7 @@ void publish_waypoints(geometry_msgs::PoseArray waypoints){
         waypoints_publisher.publish(temp_waypoints_with_cov);
     }
     path_ready_publisher.publish(-1);
+    scanner_runstate_publisher.publish(false);
 }
 
 void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
@@ -488,6 +490,7 @@ int main(int argc, char **argv)
     waypoints_publisher = node.advertise<geometry_msgs::PoseWithCovarianceStamped>("/waypoints", 1);
     path_ready_publisher = node.advertise<std_msgs::Empty>("/path_ready", 1);
     path_cancel_publisher = node.advertise<std_msgs::Empty>("/path_reset", 1);
+    scanner_runstate_publisher = node.advertise<std_msgs::Bool>("/scanner/runstate", 1);
 
     listener = new tf::TransformListener();
 
