@@ -539,7 +539,7 @@ int main(int argc, char **argv)
     ROS_INFO("Begin searching for object");
     object_search_in_progress = true;
     set_new_goal();
-
+    //NEED TO WRITE AN ARRAY FOR STORING ALL THE STATIONS
     while (node.ok() && object_search_in_progress && !object_found)
     {
         update_robot_pos();
