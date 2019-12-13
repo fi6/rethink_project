@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/drive_controller_node.dir/src/drive_controller.cpp.o"
-  "/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/drive_controller_node.pdb"
-  "/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/drive_controller_node"
+  "/home/yida/rethink_project/devel/lib/tutorial_pkg/drive_controller_node.pdb"
+  "/home/yida/rethink_project/devel/lib/tutorial_pkg/drive_controller_node"
 )
 
 # Per-language clean rules from dependency scanning.

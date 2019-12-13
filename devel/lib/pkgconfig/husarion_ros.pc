@@ -1,8 +1,0 @@
-prefix=/home/husarion/husarion_workspace/devel
-
-Name: husarion_ros
-Description: Description of husarion_ros
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/husarion/husarion_workspace/devel/lib 
-Requires: 

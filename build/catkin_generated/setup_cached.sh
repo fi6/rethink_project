@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/husarion/husarion_workspace/build"
+export PWD="/home/yida/rethink_project/build"
+export ROS_PACKAGE_PATH="/home/yida/rethink_project_pc/src:/home/yida/rethink_project/src:/opt/ros/kinetic/share"

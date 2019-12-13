@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tutorial_pkg"
-PROJECT_SPACE_DIR = "/home/husarion/husarion_workspace/devel"
+PROJECT_SPACE_DIR = "/home/yida/rethink_project/devel"
 PROJECT_VERSION = "1.0.0"

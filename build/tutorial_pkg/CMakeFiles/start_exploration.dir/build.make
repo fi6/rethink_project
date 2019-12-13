@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/husarion/husarion_workspace/src
+CMAKE_SOURCE_DIR = /home/yida/rethink_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/husarion/husarion_workspace/build
+CMAKE_BINARY_DIR = /home/yida/rethink_project/build
 
 # Include any dependencies generated for this target.
 include tutorial_pkg/CMakeFiles/start_exploration.dir/depend.make
@@ -58,17 +58,17 @@ include tutorial_pkg/CMakeFiles/start_exploration.dir/progress.make
 include tutorial_pkg/CMakeFiles/start_exploration.dir/flags.make
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o: tutorial_pkg/CMakeFiles/start_exploration.dir/flags.make
-tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o: /home/husarion/husarion_workspace/src/tutorial_pkg/src/explore_action_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/husarion/husarion_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o"
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o -c /home/husarion/husarion_workspace/src/tutorial_pkg/src/explore_action_client.cpp
+tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o: /home/yida/rethink_project/src/tutorial_pkg/src/explore_action_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yida/rethink_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o"
+	cd /home/yida/rethink_project/build/tutorial_pkg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o -c /home/yida/rethink_project/src/tutorial_pkg/src/explore_action_client.cpp
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.i"
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/husarion/husarion_workspace/src/tutorial_pkg/src/explore_action_client.cpp > CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.i
+	cd /home/yida/rethink_project/build/tutorial_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yida/rethink_project/src/tutorial_pkg/src/explore_action_client.cpp > CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.i
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.s"
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/husarion/husarion_workspace/src/tutorial_pkg/src/explore_action_client.cpp -o CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.s
+	cd /home/yida/rethink_project/build/tutorial_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yida/rethink_project/src/tutorial_pkg/src/explore_action_client.cpp -o CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.s
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o.requires:
 
@@ -88,251 +88,255 @@ start_exploration_OBJECTS = \
 # External object files for target start_exploration
 start_exploration_EXTERNAL_OBJECTS =
 
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/build.make
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libexplore_costmap.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcostmap_2d.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/liblayers.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/liblaser_geometry.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_filters.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_io.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_tf.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_common.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_octree.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_io.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_kdtree.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_search.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_sample_consensus.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_filters.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_features.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_keypoints.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_segmentation.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_visualization.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_outofcore.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_surface.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_tracking.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_registration.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_recognition.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpcl_people.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_iostreams.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_serialization.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libqhull.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libOpenNI.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libflann_cpp_s.a
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkParallelCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtksys-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOLegacy-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonDataModel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonMath-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonMisc-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonSystem-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonTransforms-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonExecutionModel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libz.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersAMR-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersGeneral-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonComputationalGeometry-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOMPIImage-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOImage-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkDICOMParser-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkmetaio-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libjpeg.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpng.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libtiff.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkParallelMPI-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersImaging-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersStatistics-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingFourier-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkalglib-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingGeneral-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingSources-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkCommonColor-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersExtraction-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersGeometry-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersSources-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOInfovis-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOXML-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOGeometry-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libjsoncpp.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOXMLParser-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libexpat.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInfovisCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libxml2.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallelMPI-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersModeling-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingLIC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingOpenGL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingHybrid-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingFreeType-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libfreetype.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkftgl-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOFFMPEG-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOMovie-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libtheoraenc.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libtheoradec.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libogg.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingMorphological-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersVerdict-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkverdict-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallelFlowPaths-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersFlowPaths-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libgl2ps.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOMySQL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOSQL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libsqlite3.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOExodus-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkexoIIc-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libnetcdf_c++.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libnetcdf.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/hdf5/openmpi/lib/libhdf5.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libsz.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libm.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/hdf5/openmpi/lib/libhdf5_hl.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/openmpi/lib/libmpi.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkVPIC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkWrappingPython27Core-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libvtkWrappingTools-6.2.a
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkGeovisCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInfovisLayout-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInteractionStyle-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInteractionWidgets-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersHybrid-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingAnnotation-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingColor-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingVolume-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkViewsCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkproj4-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOExport-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingContext2D-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingGL2PS-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingContextOpenGL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingLabel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInteractionImage-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersSMP-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingLOD-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOXdmf2-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkxdmf2-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIONetCDF-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOPLY-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOMINC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingMath-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkViewsContext2D-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingParallel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOImport-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersProgrammable-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingMatplotlib-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkPythonInterpreter-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOGDAL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOLSDyna-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingStatistics-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkDomainsChemistry-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOParallelXML-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOEnSight-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOParallel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkTestingRendering-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkTestingGenericBridge-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkViewsInfovis-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkChartsCore-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingParallelLIC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOVPIC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOParallelNetCDF-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOMPIParallel-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersReebGraph-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersPython-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkWrappingJava-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersSelection-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingImage-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersHyperTree-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingFreeTypeFontConfig-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOParallelExodus-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallelGeometry-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersGeneric-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersTexture-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOAMR-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkViewsGeovis-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallelImaging-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOParallelLSDyna-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingExternal-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOODBC-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkImagingStencil-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkTestingIOSQL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkParallelMPI4Py-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkInfovisBoostGraphAlgorithms-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkFiltersParallelStatistics-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingVolumeOpenGL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOGeoJSON-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOVideo-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkRenderingFreeTypeOpenGL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkLocalExample-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libvtkIOPostgreSQL-6.2.so.6.2.0
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libnodeletlib.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libuuid.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libbondcpp.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libvoxel_grid.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_ros.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_cv.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_photo3.so.3.3.1
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_core.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmean.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libparams.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libincrement.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmedian.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtransfer_function.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libtinyxml2.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libclass_loader.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libPocoFoundation.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libdl.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroslib.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librospack.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpython2.7.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libtinyxml.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcv_bridge.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_core3.so.3.3.1
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_imgproc3.so.3.3.1
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/arm-linux-gnueabihf/libopencv_imgcodecs3.so.3.3.1
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosbag.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosbag_storage.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_program_options.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroslz4.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/liblz4.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtopic_tools.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libactionlib.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroscpp.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf2.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/liblog4cxx.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_regex.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librostime.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcpp_common.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_system.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_thread.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_chrono.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libboost_atomic.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libpthread.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
-/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/husarion/husarion_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration"
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/start_exploration.dir/link.txt --verbose=$(VERBOSE)
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/build.make
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libexplore_costmap.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcostmap_2d.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/liblayers.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/liblaser_geometry.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_filters.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_io.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libpcl_ros_tf.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libqhull.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libOpenNI.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingStencil-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtksys-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersAMR-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkParallelCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libz.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkalglib-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOImage-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libjpeg.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpng.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libtiff.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libfreetype.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkftgl-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOParallelNetCDF-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkParallelMPI-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libnetcdf.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libsz.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libm.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOLSDyna-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOXML-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libexpat.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkLocalExample-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInfovisCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkGeovisCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInfovisLayout-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkproj4-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libgl2ps.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkverdict-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOMovie-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libtheoradec.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libogg.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersImaging-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOMINC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkViewsInfovis-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingLabel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingImage-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersFlowPaths-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkxdmf2-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libxml2.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersReebGraph-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOXdmf2-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOAMR-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingStatistics-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOParallel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIONetCDF-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkexoIIc-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOParallelLSDyna-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelGeometry-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libvtkWrappingTools-6.2.a
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOExodus-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOSQL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libsqlite3.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelStatistics-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersProgrammable-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelImaging-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallelLIC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingLIC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInteractionImage-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersPython-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkWrappingPython27Core-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOParallelExodus-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneric-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOVideo-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOInfovis-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeTypeOpenGL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkInfovisBoostGraphAlgorithms-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingGL2PS-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOGeoJSON-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersVerdict-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOImport-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkTestingIOSQL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkPythonInterpreter-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOODBC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOEnSight-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOMySQL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingMatplotlib-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkDomainsChemistry-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOExport-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelMPI-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOParallelXML-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkTestingRendering-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOMPIParallel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkParallelMPI4Py-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersSMP-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkFiltersSelection-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOVPIC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkVPIC-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingMath-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkImagingMorphological-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallel-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeTypeFontConfig-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOFFMPEG-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOMPIImage-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libvtkIOGDAL-6.2.so.6.2.0
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libnodeletlib.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libbondcpp.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libvoxel_grid.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_ros.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_cv.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libgrid_map_core.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmean.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libparams.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libincrement.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmedian.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtransfer_function.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libclass_loader.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/libPocoFoundation.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroslib.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librospack.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosbag.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosbag_storage.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroslz4.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/liblz4.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtopic_tools.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libactionlib.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroscpp.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libtf2.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/librostime.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /opt/ros/kinetic/lib/libcpp_common.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration: tutorial_pkg/CMakeFiles/start_exploration.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yida/rethink_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration"
+	cd /home/yida/rethink_project/build/tutorial_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/start_exploration.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tutorial_pkg/CMakeFiles/start_exploration.dir/build: /home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration
+tutorial_pkg/CMakeFiles/start_exploration.dir/build: /home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration
 
 .PHONY : tutorial_pkg/CMakeFiles/start_exploration.dir/build
 
@@ -341,10 +345,10 @@ tutorial_pkg/CMakeFiles/start_exploration.dir/requires: tutorial_pkg/CMakeFiles/
 .PHONY : tutorial_pkg/CMakeFiles/start_exploration.dir/requires
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/clean:
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && $(CMAKE_COMMAND) -P CMakeFiles/start_exploration.dir/cmake_clean.cmake
+	cd /home/yida/rethink_project/build/tutorial_pkg && $(CMAKE_COMMAND) -P CMakeFiles/start_exploration.dir/cmake_clean.cmake
 .PHONY : tutorial_pkg/CMakeFiles/start_exploration.dir/clean
 
 tutorial_pkg/CMakeFiles/start_exploration.dir/depend:
-	cd /home/husarion/husarion_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/husarion/husarion_workspace/src /home/husarion/husarion_workspace/src/tutorial_pkg /home/husarion/husarion_workspace/build /home/husarion/husarion_workspace/build/tutorial_pkg /home/husarion/husarion_workspace/build/tutorial_pkg/CMakeFiles/start_exploration.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yida/rethink_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yida/rethink_project/src /home/yida/rethink_project/src/tutorial_pkg /home/yida/rethink_project/build /home/yida/rethink_project/build/tutorial_pkg /home/yida/rethink_project/build/tutorial_pkg/CMakeFiles/start_exploration.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tutorial_pkg/CMakeFiles/start_exploration.dir/depend
 

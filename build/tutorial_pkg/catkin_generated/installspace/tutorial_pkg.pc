@@ -1,8 +1,8 @@
-prefix=/home/husarion/husarion_workspace/install
+prefix=/home/yida/rethink_project/install
 
 Name: tutorial_pkg
 Description: Description of tutorial_pkg
 Version: 1.0.0
 Cflags: 
-Libs: -L/home/husarion/husarion_workspace/install/lib 
+Libs: -L/home/yida/rethink_project/install/lib 
 Requires: 

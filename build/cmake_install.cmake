@@ -1,8 +1,8 @@
-# Install script for directory: /home/husarion/husarion_workspace/src
+# Install script for directory: /home/yida/rethink_project/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/husarion/husarion_workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yida/rethink_project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,92 +44,92 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/_setup_util.py")
+   "/home/yida/rethink_project/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE PROGRAM FILES "/home/husarion/husarion_workspace/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE PROGRAM FILES "/home/yida/rethink_project/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/env.sh")
+   "/home/yida/rethink_project/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE PROGRAM FILES "/home/husarion/husarion_workspace/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE PROGRAM FILES "/home/yida/rethink_project/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/setup.bash;/home/husarion/husarion_workspace/install/local_setup.bash")
+   "/home/yida/rethink_project/install/setup.bash;/home/yida/rethink_project/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE FILE FILES
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/setup.bash"
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE FILE FILES
+    "/home/yida/rethink_project/build/catkin_generated/installspace/setup.bash"
+    "/home/yida/rethink_project/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/setup.sh;/home/husarion/husarion_workspace/install/local_setup.sh")
+   "/home/yida/rethink_project/install/setup.sh;/home/yida/rethink_project/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE FILE FILES
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/setup.sh"
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE FILE FILES
+    "/home/yida/rethink_project/build/catkin_generated/installspace/setup.sh"
+    "/home/yida/rethink_project/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/setup.zsh;/home/husarion/husarion_workspace/install/local_setup.zsh")
+   "/home/yida/rethink_project/install/setup.zsh;/home/yida/rethink_project/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE FILE FILES
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/setup.zsh"
-    "/home/husarion/husarion_workspace/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE FILE FILES
+    "/home/yida/rethink_project/build/catkin_generated/installspace/setup.zsh"
+    "/home/yida/rethink_project/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/husarion/husarion_workspace/install/.rosinstall")
+   "/home/yida/rethink_project/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/husarion/husarion_workspace/install" TYPE FILE FILES "/home/husarion/husarion_workspace/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/yida/rethink_project/install" TYPE FILE FILES "/home/yida/rethink_project/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/husarion/husarion_workspace/build/gtest/cmake_install.cmake")
-  include("/home/husarion/husarion_workspace/build/husarion_ros/cmake_install.cmake")
-  include("/home/husarion/husarion_workspace/build/rosbot_ekf/cmake_install.cmake")
-  include("/home/husarion/husarion_workspace/build/rosbot_webui/cmake_install.cmake")
-  include("/home/husarion/husarion_workspace/build/tutorial_pkg/cmake_install.cmake")
+  include("/home/yida/rethink_project/build/gtest/cmake_install.cmake")
+  include("/home/yida/rethink_project/build/rosbot_description/src/rosbot_navigation/cmake_install.cmake")
+  include("/home/yida/rethink_project/build/rosbot_description/src/rosbot_description/cmake_install.cmake")
+  include("/home/yida/rethink_project/build/rosbot_description/src/rosbot_gazebo/cmake_install.cmake")
+  include("/home/yida/rethink_project/build/tutorial_pkg/cmake_install.cmake")
 
 endif()
 
@@ -141,5 +141,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/husarion/husarion_workspace/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yida/rethink_project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

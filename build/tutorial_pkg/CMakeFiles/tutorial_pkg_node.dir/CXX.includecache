@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/husarion/husarion_workspace/src/tutorial_pkg/src/tutorial_pkg_node.cpp
+/home/yida/rethink_project/src/tutorial_pkg/src/tutorial_pkg_node.cpp
 ros/ros.h
 -
 sensor_msgs/Image.h
@@ -810,13 +810,15 @@ vector
 time.h
 -
 
-/usr/include/arm-linux-gnueabihf/bits/select.h
+/usr/include/x86_64-linux-gnu/bits/select.h
+bits/wordsize.h
+-
 
-/usr/include/arm-linux-gnueabihf/bits/select2.h
+/usr/include/x86_64-linux-gnu/bits/select2.h
 
-/usr/include/arm-linux-gnueabihf/bits/sigset.h
+/usr/include/x86_64-linux-gnu/bits/sigset.h
 
-/usr/include/arm-linux-gnueabihf/bits/time.h
+/usr/include/x86_64-linux-gnu/bits/time.h
 bits/types.h
 -
 bits/types.h
@@ -824,11 +826,11 @@ bits/types.h
 bits/timex.h
 -
 
-/usr/include/arm-linux-gnueabihf/bits/timex.h
+/usr/include/x86_64-linux-gnu/bits/timex.h
 bits/types.h
 -
 
-/usr/include/arm-linux-gnueabihf/bits/types.h
+/usr/include/x86_64-linux-gnu/bits/types.h
 features.h
 -
 bits/wordsize.h
@@ -836,11 +838,11 @@ bits/wordsize.h
 bits/typesizes.h
 -
 
-/usr/include/arm-linux-gnueabihf/bits/typesizes.h
+/usr/include/x86_64-linux-gnu/bits/typesizes.h
 
-/usr/include/arm-linux-gnueabihf/bits/wordsize.h
+/usr/include/x86_64-linux-gnu/bits/wordsize.h
 
-/usr/include/arm-linux-gnueabihf/sys/select.h
+/usr/include/x86_64-linux-gnu/sys/select.h
 features.h
 -
 bits/types.h
@@ -856,7 +858,7 @@ bits/time.h
 bits/select2.h
 -
 
-/usr/include/arm-linux-gnueabihf/sys/time.h
+/usr/include/x86_64-linux-gnu/sys/time.h
 features.h
 -
 bits/types.h
@@ -868,7 +870,7 @@ bits/time.h
 sys/select.h
 -
 
-/usr/include/arm-linux-gnueabihf/sys/timeb.h
+/usr/include/x86_64-linux-gnu/sys/timeb.h
 features.h
 -
 time.h

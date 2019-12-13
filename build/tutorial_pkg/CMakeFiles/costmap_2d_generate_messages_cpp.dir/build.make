@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/husarion/husarion_workspace/src
+CMAKE_SOURCE_DIR = /home/yida/rethink_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/husarion/husarion_workspace/build
+CMAKE_BINARY_DIR = /home/yida/rethink_project/build
 
 # Utility rule file for costmap_2d_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build: costmap_2d_g
 .PHONY : tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
 
 tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean:
-	cd /home/husarion/husarion_workspace/build/tutorial_pkg && $(CMAKE_COMMAND) -P CMakeFiles/costmap_2d_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/yida/rethink_project/build/tutorial_pkg && $(CMAKE_COMMAND) -P CMakeFiles/costmap_2d_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/clean
 
 tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/depend:
-	cd /home/husarion/husarion_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/husarion/husarion_workspace/src /home/husarion/husarion_workspace/src/tutorial_pkg /home/husarion/husarion_workspace/build /home/husarion/husarion_workspace/build/tutorial_pkg /home/husarion/husarion_workspace/build/tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yida/rethink_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yida/rethink_project/src /home/yida/rethink_project/src/tutorial_pkg /home/yida/rethink_project/build /home/yida/rethink_project/build/tutorial_pkg /home/yida/rethink_project/build/tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tutorial_pkg/CMakeFiles/costmap_2d_generate_messages_cpp.dir/depend
 

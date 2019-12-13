@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/start_exploration.dir/src/explore_action_client.cpp.o"
-  "/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration.pdb"
-  "/home/husarion/husarion_workspace/devel/lib/tutorial_pkg/start_exploration"
+  "/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration.pdb"
+  "/home/yida/rethink_project/devel/lib/tutorial_pkg/start_exploration"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/husarion/husarion_workspace/src"
+source_root_dir = "/home/yida/rethink_project/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/husarion/husarion_workspace/devel;/home/husarion/ros_workspace/devel;/opt/ros/kinetic".split(';') if "/home/husarion/husarion_workspace/devel;/home/husarion/ros_workspace/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/yida/rethink_project_pc/devel;/home/yida/rethink_project/devel;/opt/ros/kinetic".split(';') if "/home/yida/rethink_project_pc/devel;/home/yida/rethink_project/devel;/opt/ros/kinetic" != "" else []

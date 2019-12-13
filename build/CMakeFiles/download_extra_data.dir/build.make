@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/husarion/husarion_workspace/src
+CMAKE_SOURCE_DIR = /home/yida/rethink_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/husarion/husarion_workspace/build
+CMAKE_BINARY_DIR = /home/yida/rethink_project/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/husarion/husarion_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/husarion/husarion_workspace/src /home/husarion/husarion_workspace/src /home/husarion/husarion_workspace/build /home/husarion/husarion_workspace/build /home/husarion/husarion_workspace/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yida/rethink_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yida/rethink_project/src /home/yida/rethink_project/src /home/yida/rethink_project/build /home/yida/rethink_project/build /home/yida/rethink_project/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 
