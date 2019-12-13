@@ -286,7 +286,9 @@ void objects_found_callback(const std_msgs::Float32MultiArrayConstPtr &msg)
     if (msg->data.size() > 0)
     {
         ROS_INFO("Object detected");
-        object_found = true;
+        //object_found = true;
+        path_cancel_publisher.publish(-1);  //stop moving
+        //WRITE QR CODE SCANNER HERE
     }
 }
 
@@ -424,6 +426,34 @@ void test_function_check_space_occupation(ros::NodeHandle node)
     }
 }
 
+void publish_waypoints(geometry_msgs::PoseWithCovarianceStamped waypoints[]){
+    for (int i = 0; i<sizeof(waypoints); i++){
+        waypoints_publisher.publish(waypoints[i]);
+    }
+    path_ready_publisher.publish(-1);
+}
+
+void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
+    if (msg->poses.size() == 0)
+    {
+        is_queue_empty = true;
+    }
+    else
+    {
+        is_queue_empty = false;
+        for (int i=0; i< sizeof(msg->poses); i++){
+            waypoints_queue[i] = msg->poses[i];
+        }
+    }
+    
+}
+
+void set_initial_waypoints(){
+    geometry_msgs::PoseWithCovarianceStamped waypoint;
+    //waypoint.pose = ???;
+    initial_waypoints[0] = waypoint;
+}
+
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "search_manager");
@@ -434,12 +464,14 @@ int main(int argc, char **argv)
     exploration_failed = false;
     object_search_in_progress = false;
     object_found = false;
+    is_queue_empty = true;
 
     ros::Subscriber objects_found_sub = node.subscribe("/objects", 5, objects_found_callback);
     ros::Subscriber sub = node.subscribe("/proj_scan", 1, scanCallback);
     ros::Subscriber gridMapSub = node.subscribe("/map", 1, gridMapCallback);
     ros::Subscriber move_base_status_sub = node.subscribe("/move_base/status", 1, status_callback);
     ros::Subscriber exploration_status_sub = node.subscribe("/explore_server/status", 1, explore_status_callback);
+    ros::Subscriber update_waypoints = node.subscribe("/waypoints", 1, update_waypoints_callback);
 
     publisher_obstacles_found = node.advertise<nav_msgs::OccupancyGrid>("/obstacles/found", 1);
     publisher_checked_obstacles = node.advertise<nav_msgs::OccupancyGrid>("/obstacles/checked", 1);
@@ -448,6 +480,11 @@ int main(int argc, char **argv)
     outline_publisher = node.advertise<geometry_msgs::PolygonStamped>("/checked_outline", 1);
     goal_pub = node.advertise<actionlib_msgs::GoalID>("/move_base/cancel", 1);
     explore_canceller = node.advertise<actionlib_msgs::GoalID>("/explore_server/cancel", 1);
+    // Publisher about waypoints(publish array to node, start/calcel the following job)
+    waypoints_publisher = node.advertise<geometry_msgs::PoseWithCovarianceStamped>("/waypoints", 1);
+    path_ready_publisher = node.advertise<std_msgs::Empty>("/path_ready", 1);
+    path_cancel_publisher = node.advertise<std_msgs::Empty>("/path_reset", 1);
+
     listener = new tf::TransformListener();
 
     map = new grid_map::GridMap({"input_og"});

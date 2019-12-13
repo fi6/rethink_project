@@ -211,7 +211,3 @@ bool SearchManager::is_goal_reached(geometry_msgs::PoseStamped goal, tf::Stamped
 }
 
 
-/* geometry_msgs::PoseWithCovarianceStamped SearchManager::createWayPoints(){
-    geometry_msgs::PoseWithCovariancesStamped goal;
-    
-} */
