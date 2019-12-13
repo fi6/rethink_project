@@ -209,5 +209,3 @@ bool SearchManager::is_goal_reached(geometry_msgs::PoseStamped goal, tf::Stamped
     }
     return false;
 }
-
-

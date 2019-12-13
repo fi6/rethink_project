@@ -4,7 +4,6 @@
 #include <grid_map_core/grid_map_core.hpp>
 #include <frontier_exploration/ExploreTaskAction.h>
 
-
 class SearchManager
 {
 public:
@@ -56,8 +55,6 @@ public:
     bool set_point_checked(float x, float y, grid_map::GridMap *gm, grid_map::Position obstacle, float radius);
 
     frontier_exploration::ExploreTaskGoal createExplorationGoal();
-
-    geometry_msgs::PoseWithCovarianceStamped sendExploreWayPoints();
 
     bool is_goal_reached(geometry_msgs::PoseStamped goal, tf::StampedTransform current_tf, double linear_threshold, double angular_threshold);
 

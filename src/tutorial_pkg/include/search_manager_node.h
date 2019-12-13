@@ -18,8 +18,6 @@
 #include <actionlib_msgs/GoalID.h>
 #include <actionlib_msgs/GoalStatusArray.h>
 #include <SearchManager.h>
-#include <geometry_msgs/PoseWithCovarianceStamped.h>
-#include <geometry_msgs/PoseArray.h>
 
 SearchManager *sm;
 grid_map::GridMap *obstacles;
@@ -41,7 +39,6 @@ ros::Publisher vis_pub;
 ros::Publisher goal_pub;
 ros::Publisher explore_canceller;
 ros::Publisher outline_publisher;
-
 
 double angle_min;
 double angle_max;       //        # end angle of the scan [rad]
@@ -90,11 +87,3 @@ grid_map::Position get_optimal_pose(grid_map::Position obstacle);
 void cancel_move_base_action();
 void cancel_exploration_action();
 void test_function_check_space_occupation();
-
-
-ros::Publisher waypoints_publisher;
-ros::Publisher path_ready_publisher;
-ros::Publisher path_cancel_publisher;
-geometry_msgs::Pose waypoints_queue[];
-geometry_msgs::PoseWithCovarianceStamped initial_waypoints[];
-bool is_queue_empty;
