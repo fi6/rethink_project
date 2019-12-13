@@ -289,6 +289,7 @@ void objects_found_callback(const std_msgs::Float32MultiArrayConstPtr &msg)
         //object_found = true;
         path_cancel_publisher.publish(-1);  //stop moving
         //WRITE QR CODE SCANNER HERE
+        publish_waypoints(waypoints);
     }
 }
 
@@ -426,9 +427,12 @@ void test_function_check_space_occupation(ros::NodeHandle node)
     }
 }
 
-void publish_waypoints(geometry_msgs::PoseWithCovarianceStamped waypoints[]){
+void publish_waypoints(geometry_msgs::PoseArray waypoints){
+    geometry_msgs::PoseWithCovarianceStamped temp_waypoints_with_cov;
     for (int i = 0; i<sizeof(waypoints); i++){
-        waypoints_publisher.publish(waypoints[i]);
+        temp_waypoints_with_cov.pose = waypoints[i].pose;
+        //temp_waypoints_with_cov.covariance = [];
+        waypoints_publisher.publish(temp_waypoints_with_cov);
     }
     path_ready_publisher.publish(-1);
 }
