@@ -7,12 +7,15 @@ import cv2
 import rospy
 from sensor_msgs.msg import CompressedImage
 from std_msgs.msg import String
+from std_msgs.msg import Bool
 from cv_bridge import CvBridge, CvBridgeError
 import time
 
-pub = rospy.Publisher('/barcode',String, queue_size=10)
+pub = rospy.Publisher('scanner/barcode',String, queue_size=10)
 output=String()
 output="empty"
+runstate=Bool()
+runstate.data='false'
 def decode(im) : 
     
     # Find barcodes and QR codes
@@ -64,13 +67,19 @@ def callback(data):
     output = decode(image)
     print(output)
     #display(image, decodedObjects)
+def runstateCb(data):
+    global runstate
+    runstate=data.data
 
 def listener():
     global output
+    global runstate
     rospy.init_node("qrscanner",anonymous=True)
     rospy.Subscriber("camera/rgb/image_raw/compressed", CompressedImage, callback, queue_size=1)
+    rospy.Subscriber("scanner/runstate", Bool, runstateCb, queue_size=1)
     while not rospy.is_shutdown():
-        pub.publish(output)
+        if runstate:
+            pub.publish(output)
         rospy.sleep(.05)
    
 # Main 
