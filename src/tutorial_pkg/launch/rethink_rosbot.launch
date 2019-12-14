@@ -1,7 +1,7 @@
 <launch>
 
     <arg name="rosbot_pro" default="false"/>
-    <arg name="map" default="$(find maps)/map1.yaml"/>
+    <arg name="map" default="$(find tutorial_pkg)/maps/map1.yaml"/>
 
     <include file="$(find tutorial_pkg)/launch/rosbot_hardware.launch">
         <arg name="rosbot_pro" value="$(arg rosbot_pro)" />
