@@ -460,6 +460,7 @@ void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
 }
 
 void set_initial_waypoints(){
+    ROS_INFO("Initial Waypoints Setting Start");
     initial_waypoints.header.frame_id = "map";
     geometry_msgs::Pose waypoint;
     waypoint.position.x = -2.6;
