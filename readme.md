@@ -1,7 +1,7 @@
 #Project Rethink
 Welcome to the GitHub Repository for Project Rethink.
 
-##Instructions to Run
+##Instructions to Run Project
 1. Clone this repository to your workspace.
 2. Check to make sure you have installed the following dependencies on your PC
 ```
@@ -17,6 +17,12 @@ roslaunch tutorial_pkg rethink_rosbot.launch
 ```
 roslaunch tutorial_pkg rethink_pc.launch
 ```
+
+##Instructions to Explore Unknown Spaces
+On the ROSBot, run
+```
+roslaunch rosbot_ekf all.launch
+roslaunch tutorial_pkg rethink_explore.launch
 
 ##Contributors
 * Wei Xu
