@@ -561,7 +561,7 @@ int main(int argc, char **argv)
     }
 
     ROS_INFO("Begin searching for object");
-    object_search_in_progress = true;
+    //object_search_in_progress = true;
     set_initial_waypoints();
     publish_waypoints(initial_waypoints);
     //set_new_goal();
