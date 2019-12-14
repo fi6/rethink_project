@@ -1,6 +1,7 @@
 <launch>
 
     <arg name="rosbot_pro" default="false"/>
+    <arg name="map" default="$(find maps)/map1.yaml"/>
 
     <include file="$(find tutorial_pkg)/launch/rosbot_hardware.launch">
         <arg name="rosbot_pro" value="$(arg rosbot_pro)" />
@@ -13,6 +14,10 @@
     <node pkg="image_transport" type="republish" name="depth_republish" args=" raw in:=/camera/depth/image_raw compressedDepth out:=/depth_republish">
         <param name="compressedDepth/format" value="png"/>
         <param name="compressedDepth/png_level" value="1"/>
+    </node>
+
+    <node name="map_server" pkg="map_server" type="map_server" args=" $(arg map)" required="true" output="screen">
+        <param name="frame_id" value="/map" />
     </node>
 
     <include file="$(find tutorial_pkg)/launch/gmapping.launch"></include>
