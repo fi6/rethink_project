@@ -1,4 +1,4 @@
-image: /home/husarion/husarion_workspace/src/tutorial_pkg/maps/map1.pgm
+image: map1.pgm
 resolution: 0.010000
 origin: [-15.240000, -15.240000, 0.000000]
 negate: 0

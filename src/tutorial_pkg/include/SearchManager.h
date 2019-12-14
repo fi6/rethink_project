@@ -3,6 +3,7 @@
 #include <tf/transform_listener.h>
 #include <grid_map_core/grid_map_core.hpp>
 #include <frontier_exploration/ExploreTaskAction.h>
+#include <geometry_msgs/PoseWithCovarianceStamped.h>
 
 
 class SearchManager

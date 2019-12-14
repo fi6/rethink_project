@@ -20,6 +20,7 @@
 #include <SearchManager.h>
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
 #include <geometry_msgs/PoseArray.h>
+#include <std_msgs/Bool.h>
 
 SearchManager *sm;
 grid_map::GridMap *obstacles;
@@ -41,6 +42,7 @@ ros::Publisher vis_pub;
 ros::Publisher goal_pub;
 ros::Publisher explore_canceller;
 ros::Publisher outline_publisher;
+ros::Publisher scanner_runstate_publisher;
 
 
 double angle_min;
@@ -95,6 +97,7 @@ void test_function_check_space_occupation();
 ros::Publisher waypoints_publisher;
 ros::Publisher path_ready_publisher;
 ros::Publisher path_cancel_publisher;
-geometry_msgs::Pose waypoints_queue[];
-geometry_msgs::PoseWithCovarianceStamped initial_waypoints[];
+geometry_msgs::Pose waypoints_queue[5];
+//geometry_msgs::PoseWithCovarianceStamped initial_waypoints[];
 bool is_queue_empty;
+std_msgs::Bool scanner_state;
