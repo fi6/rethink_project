@@ -98,6 +98,7 @@ ros::Publisher waypoints_publisher;
 ros::Publisher path_ready_publisher;
 ros::Publisher path_cancel_publisher;
 geometry_msgs::Pose waypoints_queue[5];
-//geometry_msgs::PoseWithCovarianceStamped initial_waypoints[];
+std_msgs::Empty empty_signal;
+geometry_msgs::PoseWithCovarianceStamped initial_waypoints[5];
 bool is_queue_empty;
 std_msgs::Bool scanner_state;

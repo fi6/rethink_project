@@ -287,7 +287,7 @@ void objects_found_callback(const std_msgs::Float32MultiArrayConstPtr &msg)
     {
         ROS_INFO("Object detected");
         //object_found = true;
-        //path_cancel_publisher.publish(-1);  //stop moving
+        path_cancel_publisher.publish(empty_signal);  //stop moving
         scanner_runstate_publisher.publish(scanner_state);
         //WRITE QR CODE SCANNER HERE
         //publish_waypoints(waypoints);
@@ -435,7 +435,8 @@ void publish_waypoints(geometry_msgs::PoseArray waypoints){
         //temp_waypoints_with_cov.covariance = [];
         waypoints_publisher.publish(temp_waypoints_with_cov);
     }
-    //path_ready_publisher.publish(-1);
+    
+    path_ready_publisher.publish(empty_signal);
     
     scanner_state.data = false;
     scanner_runstate_publisher.publish(scanner_state);
@@ -458,8 +459,19 @@ void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
 
 void set_initial_waypoints(){
     geometry_msgs::PoseWithCovarianceStamped waypoint;
-    //waypoint.pose = ???;
-    //initial_waypoints[0] = waypoint;
+    waypoint.pose.pose.position.x = -2.6;
+    waypoint.pose.pose.position.y = -3.9;
+    waypoint.pose.pose.position.z = 0;
+    initial_waypoints[0] = waypoint;
+    waypoint.pose.pose.position.x = -3.96;
+    waypoint.pose.pose.position.y = -3;
+    waypoint.pose.pose.position.z = 0;
+    initial_waypoints[1] = waypoint;
+    waypoint.pose.pose.position.x = -0.8;
+    waypoint.pose.pose.position.y = -0.3;
+    waypoint.pose.pose.position.z = 0;
+    initial_waypoints[2] = waypoint;
+
 }
 
 int main(int argc, char **argv)
@@ -516,7 +528,7 @@ int main(int argc, char **argv)
     checked_area.header.frame_id = "map";
 
     ros::Rate rate(50.0);
-    start_frontier_exploration();
+    //start_frontier_exploration();
 
     while (exploration_in_progress && node.ok() && !object_found)
     {
