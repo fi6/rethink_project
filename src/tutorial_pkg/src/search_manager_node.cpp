@@ -442,16 +442,6 @@ void publish_waypoints(geometry_msgs::PoseArray waypoints){
     scanner_runstate_publisher.publish(scanner_state);
 }
 
-void publish_waypoints(geometry_msgs::PoseWithCovarianceStamped waypoints_with_cov[3]){
-    for (int i = 0; i<3; i++){
-
-        waypoints_publisher.publish(waypoints_with_cov[i]);
-    }
-    path_ready_publisher.publish(empty_signal);
-    scanner_state.data = false;
-    scanner_runstate_publisher.publish(scanner_state);
-}
-
 void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
     if (msg->poses.size() == 0)
     {
@@ -460,27 +450,29 @@ void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
     else
     {
         is_queue_empty = false;
+        waypoints_queue.header = msg->header;
         for (int i=0; i< sizeof(msg->poses); i++){
-            waypoints_queue[i] = msg->poses[i];
+            waypoints_queue.poses[i] = msg->poses[i];
         }
     }
     
 }
 
 void set_initial_waypoints(){
-    geometry_msgs::PoseWithCovarianceStamped waypoint;
-    waypoint.pose.pose.position.x = -2.6;
-    waypoint.pose.pose.position.y = -3.9;
-    waypoint.pose.pose.position.z = 0;
-    initial_waypoints[0] = waypoint;
-    waypoint.pose.pose.position.x = -3.96;
-    waypoint.pose.pose.position.y = -3;
-    waypoint.pose.pose.position.z = 0;
-    initial_waypoints[1] = waypoint;
-    waypoint.pose.pose.position.x = -0.8;
-    waypoint.pose.pose.position.y = -0.3;
-    waypoint.pose.pose.position.z = 0;
-    initial_waypoints[2] = waypoint;
+    initial_waypoints.header.frame_id = "map";
+    geometry_msgs::Pose waypoint;
+    waypoint.position.x = -2.6;
+    waypoint.position.y = -3.9;
+    waypoint.position.z = 0;
+    initial_waypoints.poses[0] = waypoint;
+    waypoint.position.x = -3.96;
+    waypoint.position.y = -3;
+    waypoint.position.z = 0;
+    initial_waypoints.poses[1] = waypoint;
+    waypoint.position.x = -0.8;
+    waypoint.position.y = -0.3;
+    waypoint.position.z = 0;
+    initial_waypoints.poses[2] = waypoint;
 
 }
 
@@ -538,7 +530,7 @@ int main(int argc, char **argv)
     checked_area.header.frame_id = "map";
 
     ros::Rate rate(50.0);
-    start_frontier_exploration();
+    //start_frontier_exploration();
 
     while (exploration_in_progress && node.ok() && !object_found)
     {
@@ -570,9 +562,10 @@ int main(int argc, char **argv)
     ROS_INFO("Begin searching for object");
     object_search_in_progress = true;
     set_initial_waypoints();
+    publish_waypoints(initial_waypoints);
     //set_new_goal();
     //NEED TO WRITE AN ARRAY FOR STORING ALL THE STATIONS
-    while (node.ok() && object_search_in_progress && !object_found)
+    /*while (node.ok() && object_search_in_progress && !object_found)
     {
         update_robot_pos();
         goal_reached = sm->is_goal_reached(exploration_goal, ROSbot2_base_to_map_transform, 0.3, 0.5);
@@ -609,6 +602,6 @@ int main(int argc, char **argv)
     else
     {
         ROS_WARN("Object search cancelled with external signal");
-    }
+    }*/
     return 0;
 }
