@@ -442,6 +442,16 @@ void publish_waypoints(geometry_msgs::PoseArray waypoints){
     scanner_runstate_publisher.publish(scanner_state);
 }
 
+void publish_waypoints(geometry_msgs::PoseWithCovarianceStamped waypoints_with_cov[3]){
+    for (int i = 0; i<3; i++){
+
+        waypoints_publisher.publish(waypoints_with_cov[i]);
+    }
+    path_ready_publisher.publish(empty_signal);
+    scanner_state.data = false;
+    scanner_runstate_publisher.publish(scanner_state);
+}
+
 void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
     if (msg->poses.size() == 0)
     {
@@ -559,7 +569,8 @@ int main(int argc, char **argv)
 
     ROS_INFO("Begin searching for object");
     object_search_in_progress = true;
-    set_new_goal();
+    set_initial_waypoints();
+    //set_new_goal();
     //NEED TO WRITE AN ARRAY FOR STORING ALL THE STATIONS
     while (node.ok() && object_search_in_progress && !object_found)
     {
