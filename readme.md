@@ -16,3 +16,10 @@ roslaunch tutorial_pkg rethink_rosbot.launch
 4. Run the following on your PC
 ```
 roslaunch tutorial_pkg rethink_pc.launch
+```
+
+##Contributors
+* Wei Xu
+* Yida Niu
+* Theo Wiklund
+* James Tyler

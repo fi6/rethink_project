@@ -65,7 +65,7 @@ def callback(data):
     #cv2.imshow("th",image)
     #cv2.waitKey(1)
     output = decode(image)
-    print(output)
+    #print(output)
     #display(image, decodedObjects)
 def runstateCb(data):
     global runstate
