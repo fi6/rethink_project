@@ -431,8 +431,7 @@ void test_function_check_space_occupation(ros::NodeHandle node)
 void publish_waypoints(geometry_msgs::PoseArray waypoints){
     geometry_msgs::PoseWithCovarianceStamped temp_waypoints_with_cov;
     for (int i = 0; i<sizeof(waypoints); i++){
-        //temp_waypoints_with_cov.pose = waypoints[i].pose;
-        //temp_waypoints_with_cov.covariance = [];
+        temp_waypoints_with_cov.pose.pose = waypoints.poses[i];
         waypoints_publisher.publish(temp_waypoints_with_cov);
     }
     
@@ -548,7 +547,7 @@ int main(int argc, char **argv)
     checked_area.header.frame_id = "map";
 
     ros::Rate rate(50.0);
-    //start_frontier_exploration();
+    start_frontier_exploration();
 
     while (exploration_in_progress && node.ok() && !object_found)
     {
@@ -579,11 +578,16 @@ int main(int argc, char **argv)
 
     ROS_INFO("Begin searching for object");
     //object_search_in_progress = true;
-    set_initial_waypoints();
+    /*set_initial_waypoints();
     publish_waypoints(initial_waypoints);
-    //set_new_goal();
+    while (1)
+    {
+        rate.sleep();
+    }*/
+    
+    set_new_goal();
     //NEED TO WRITE AN ARRAY FOR STORING ALL THE STATIONS
-    /*while (node.ok() && object_search_in_progress && !object_found)
+    while (node.ok() && object_search_in_progress && !object_found)
     {
         update_robot_pos();
         goal_reached = sm->is_goal_reached(exploration_goal, ROSbot2_base_to_map_transform, 0.3, 0.5);
@@ -620,6 +624,6 @@ int main(int argc, char **argv)
     else
     {
         ROS_WARN("Object search cancelled with external signal");
-    }*/
+    }
     return 0;
 }
