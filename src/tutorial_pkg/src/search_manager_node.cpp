@@ -538,7 +538,7 @@ int main(int argc, char **argv)
     checked_area.header.frame_id = "map";
 
     ros::Rate rate(50.0);
-    //start_frontier_exploration();
+    start_frontier_exploration();
 
     while (exploration_in_progress && node.ok() && !object_found)
     {
