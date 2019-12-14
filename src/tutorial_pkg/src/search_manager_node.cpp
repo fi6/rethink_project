@@ -440,6 +440,7 @@ void publish_waypoints(geometry_msgs::PoseArray waypoints){
     
     scanner_state.data = false;
     scanner_runstate_publisher.publish(scanner_state);
+    ROS_INFO("Waypoint Publish Success");
 }
 
 void update_waypoints_callback(const geometry_msgs::PoseArrayConstPtr &msg){
@@ -473,7 +474,7 @@ void set_initial_waypoints(){
     waypoint.position.y = -0.3;
     waypoint.position.z = 0;
     initial_waypoints.poses[2] = waypoint;
-
+    ROS_INFO("Initial Waypoints Set");
 }
 
 int main(int argc, char **argv)
